@@ -39,21 +39,21 @@ public class ScoreKeeperTest {
     public void TestScoreTeamB1() {
        scoreKeeper = new ScoreKeeper();
        scoreKeeper.scoreTeamB1();
-       assertEquals("001:000", scoreKeeper.getScore());
+       assertEquals("000:001", scoreKeeper.getScore());
     }
 
     @Test
     public void TestScoreTeamB2() {
       scoreKeeper = new ScoreKeeper();
       scoreKeeper.scoreTeamB2();
-      assertEquals("002:000", scoreKeeper.getScore());
+      assertEquals("000:002", scoreKeeper.getScore());
     }
     
     @Test
     public void TestScoreTeamB3() {
       scoreKeeper = new ScoreKeeper();
       scoreKeeper.scoreTeamB3();
-      assertEquals("003:000", scoreKeeper.getScore());
+      assertEquals("000:003", scoreKeeper.getScore());
     }
 
 }

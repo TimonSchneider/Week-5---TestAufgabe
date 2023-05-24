@@ -24,4 +24,17 @@ public class ScoreKeeper {
     public void scoreTeamA3() {
         this.scoreTeamA += 3;
     }
+
+    public void scoreTeamB1() {
+        this.scoreTeamB += 1;
+    }
+
+    public void scoreTeamB2() {
+        this.scoreTeamB += 2;
+    }
+
+    public void scoreTeamB3() {
+        this.scoreTeamB += 3;
+    }
+
 }
