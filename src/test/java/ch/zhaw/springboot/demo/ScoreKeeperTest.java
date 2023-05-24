@@ -1,15 +1,17 @@
 package ch.zhaw.springboot.demo;
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.jupiter.api.Test;
 
 
 public class ScoreKeeperTest {
   
+    private ScoreKeeper scoreKeeper;
 
    @Test
     public void TestInitialScore() {
-        ScoreKeeper scoreKeeper = new ScoreKeeper();
-        assertEquals("000:000", ScoreKeeper.getScore())
+        scoreKeeper = new ScoreKeeper();
+        assertEquals("000:000", scoreKeeper.getScore());
    }
 }
 
