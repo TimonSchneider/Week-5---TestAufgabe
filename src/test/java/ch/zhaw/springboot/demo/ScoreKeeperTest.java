@@ -17,18 +17,21 @@ public class ScoreKeeperTest {
     @Test
     public void TestScoreTeamA1() {
        scoreKeeper = new ScoreKeeper();
+       scoreKeeper.scoreTeamA1();
        assertEquals("001:000", scoreKeeper.getScore());
     }
 
     @Test
     public void TestScoreTeamA2() {
       scoreKeeper = new ScoreKeeper();
+      scoreKeeper.scoreTeamA2();
       assertEquals("002:000", scoreKeeper.getScore());
     }
     
     @Test
     public void TestScoreTeamA3() {
       scoreKeeper = new ScoreKeeper();
+      scoreKeeper.scoreTeamA3();
       assertEquals("003:000", scoreKeeper.getScore());
     }
 
