@@ -56,6 +56,31 @@ public class ScoreKeeperTest {
       assertEquals("000:003", scoreKeeper.getScore());
     }
 
+    @Test
+    public void testScoreTeamAMultiple() {
+        scoreKeeper = new ScoreKeeper();
+        scoreKeeper.scoreTeamA1();
+        scoreKeeper.scoreTeamA2();
+        scoreKeeper.scoreTeamA3();
+        scoreKeeper.scoreTeamA1();
+        scoreKeeper.scoreTeamA2();
+        scoreKeeper.scoreTeamA3();
+        assertEquals("012:000", scoreKeeper.getScore());
+    }
+    @Test
+    public void testScoreTeamBMultiple() {
+        scoreKeeper = new ScoreKeeper();
+        scoreKeeper.scoreTeamB1();
+        scoreKeeper.scoreTeamB2();
+        scoreKeeper.scoreTeamB3();
+        scoreKeeper.scoreTeamB1();
+        scoreKeeper.scoreTeamB2();
+        scoreKeeper.scoreTeamB3();
+        assertEquals("000:012", scoreKeeper.getScore());
+    }
+
+
+
 }
 
 
