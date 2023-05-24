@@ -8,4 +8,8 @@ public class ScoreKeeper {
         this.scoreTeamA = 0;
         this.scoreTeamB = 0;
     }
+
+    public String getScore() {
+        return String.format("%03d:%03d", this.scoreTeamA, this.scoreTeamB);
+    }
 }
