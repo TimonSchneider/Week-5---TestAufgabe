@@ -12,4 +12,16 @@ public class ScoreKeeper {
     public String getScore() {
         return String.format("%03d:%03d", this.scoreTeamA, this.scoreTeamB);
     }
+
+    public void scoreTeamA1() {
+        this.scoreTeamA += 1;
+    }
+
+    public void scoreTeamA2() {
+        this.scoreTeamA += 2;
+    }
+
+    public void scoreTeamA3() {
+        this.scoreTeamA += 3;
+    }
 }
